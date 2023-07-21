@@ -1,0 +1,50 @@
+[실습1]
+
+my_list = (1, 9, 17, 69, 74)	#원하는 숫자 5개 담긴 리스트 my_list를 하나 선언해보기 
+
+var1 = sum(my_list)	#변수 var1을 선언하고, my_list의 합을 넣기
+var2 = len(my_list)		#변수 var2을 선언하고, my_list의 길이를 넣기
+var3 = var1 / var2		#변수 var3을 선언하고, my_list의 평균을 넣기
+
+
+[실습2]
+
+def plus_print(a, b):	#함수 plus_print()을 만들기 / 매개변수 a, b / 함수 안에서 a와 b를 더한 값을 출력 / 반환 값 없음
+    print(a+b)
+
+def times_return(a, b):	#함수 times_return()을 만들기 / 매개변수 a, b / 반환값 a와 b를 곱한 결과
+    return(a*b)
+
+plus_print(3, 4)
+print(times_return(3, 4))
+
+#7
+#12
+
+
+
+[실습3]
+
+my_dict = {1:'one', 2:'two', 3:'three'}	#대응 관계가 3개 있는 dictionary를 만들고, 이를 변수 my_dict에 넣기
+var1 = my_dict.keys()	#두 메서드를 이용하여 dictionary의 key값들을 담은 변수 var1, value값들을 담은 변수 var2 만들기
+var2 = my_dict.values()
+
+print(var1)
+print(var2)
+
+#dict_keys([1, 2, 3])
+#dict_values(['one', 'two', 'three'])
+
+
+
+[실습4]
+
+def solve(a, b):	#함수 solve()를 만들기 / 매개변수는 a, b
+    return (a*b)	#이 함수는 a와 b를 곱한 것을 반환함
+
+var1 = solve(3, 4)		#3, 4는 인자 / 3과 4를 인자로 넣어서 반환되는 값을 변수 var1에 넣기
+var2 = solve(3, ["Cham"])	#숫자 3과 리스트 ['Cham']을 인자로 넣어서 반환되는 값을 변수 var2에 넣기
+
+print(var1, var2)
+
+#12 ['Cham', 'Cham', 'Cham']
